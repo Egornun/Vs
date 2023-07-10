@@ -1,0 +1,309 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+	font-family: 'Lato', sans-serif;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* мы работаем с стилями для хедера */
+
+
+.header .container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.container {
+	max-width: 970px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.nav a {
+	font-size: 11px;
+	line-height: 17px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #999999;
+}
+
+.nav ul {
+	display: flex;
+	gap: 40px;
+
+}
+
+.header {
+	padding-top: 43px;
+	padding-bottom: 43px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+.banner {
+	background-image: url(img/background.jpg);
+	min-height: 540px;
+}
+
+.h1 {
+	font-size: 48px;
+	line-height: 53px;
+	text-align: center;
+	color: white;
+
+
+
+}
+
+.banner_text {
+	max-width: 465px;
+	text-align: center;
+}
+
+.banner .container {
+	min-height: 540px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+
+.banner_text a {
+	color: #00D6B4;
+	text-align: center;
+	font-size: 13px;
+	font-family: Lato;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 19px;
+	text-transform: uppercase;
+	margin-top: 29px;
+	border-radius: 3px;
+	border: 1px solid #00D6B4;
+	padding: 10px 29px;
+	display: inline-block;
+}
+
+.works h2 {
+	color: #FFF;
+	text-align: center;
+	font-size: 25px;
+	font-family: Lato;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 30px;
+	margin-bottom: 33px;
+
+}
+
+.works {
+	background-color: #222;
+}
+
+.foto {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+
+.fotobox {
+	width: calc(100% / 3 - 40px / 3);
+}
+
+.footer {
+	background-color: #222;
+	padding-bottom: 37px;
+	padding-top: 35px;
+	text-align: center;
+	color: #C2C2C2;
+
+}
+
+.footer_logo {
+	font-size: 18px;
+	line-height: 22px;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+
+}
+
+.footer_text {
+	color: #999;
+	font-size: 12px;
+	line-height: 18px;
+}
+
+@media(max-width:768px) {
+	.h1 {
+		font-size: 42px;
+	}
+
+	.fotobox {
+		width: calc(50% - 10px);
+
+	}
+
+	.fotobox img {
+		width: 100%;
+	}
+}
+
+@media(max-width:425px) {
+	.fotobox {
+		width: 100%;
+
+	}
+
+	.nav a {
+		font-size: 10px;
+	}
+
+	.nav ul {
+		gap: 10px;
+	}
+}
